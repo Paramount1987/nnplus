@@ -1,0 +1,16 @@
+include ../components/header
+.body-container
+    .container.container--profile
+        .nn-profile
+            form.nn-form
+                .form-body
+                    .form-group.form-group--bottom-lg
+                        label.label-sm ФИО:
+                        input.form-control(placeholder="" value="Зайцев Михаил Сергеевич")
+                    .form-group
+                        label.label-sm Телефон:
+                        input.form-control.form-control-phone(placeholder="" type="tel" value="+7 987 222 78 69")
+                    .btn-group.btn-group--flexbox
+                        a(href="#").btn.btn-green.btn-sm Отмена
+                        a(href="#").btn.btn-invert.btn-sm Сохранить
+include ../components/footer

@@ -1,0 +1,146 @@
+//-----------typographic
+h3,.h3 {
+    font-family: 'Futura New Demi';
+    font-size: 24px;
+    font-weight: normal;
+}
+
+h4,.h4 {
+    font-family: 'Futura New Demi';
+    font-size: 22px;
+    font-weight: normal;
+}
+
+//-------------------------
+//---style link
+.link-default{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+//-------------------------
+//---style
+.bg-green{
+    background-color: $color-green;
+}
+.bg-green-light{
+    background-color: $color-green--l1;
+}
+
+.color-weak{
+    color: rgba(255,255,255, .6);
+}
+
+.color-gray{
+    color: #95989a;
+}
+
+.text-sm{
+    font-size: 12px;
+}
+
+.text-dark{
+    color: #000;
+}
+
+.list-default{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+//-------------------------
+//-----buttons
+.btn {
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    border-radius: 2px;
+    background-color: transparent;
+    font-family: 'Futura New Demi';
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    transition: all linear .2s;
+    cursor: pointer;
+}
+
+.btn-sm{
+    line-height: 35px;
+}
+
+.btn-default{
+    color: #fff;
+    border: solid 1px #fff;
+    background-color: $color-green;
+
+    &:hover{
+        background-color: #fff;
+        border-color: $color-green;
+        color: $color-green;
+    }
+}
+
+.btn-invert{
+    font-size: 18px;
+    color: #fff;
+    border: solid 1px $color-green;
+    background-color: $color-green;
+}
+
+.btn-green{
+    font-size: 17px;
+    color: $color-green;
+    border: solid 1px $color-green;
+
+    &:hover{
+        background-color: $color-green;
+        border-color: #fff;
+        color: #fff;
+    }
+}
+
+.btn-group{
+    margin-top: 30px;
+    .btn{
+        display: inline-block;
+        width: auto;
+        padding: 0 12px;
+        margin-left: 18px;
+        vertical-align: top;
+    }
+
+    .btn:first-child{
+        margin-left: 0;
+    }
+
+    &--flexbox{
+        display: flex;
+        justify-content: space-between;
+
+        .btn{
+            width: 45%;
+            font-size: 16px;
+        }
+    }
+}
+//---------------------------
+.float-right{
+    float: right;
+}
+
+.visible-sm{
+    display: none !important;
+
+    @media (min-width: $screen-w--s){
+        display: block !important;
+    }
+}
+
+.visible-xl{
+    display: none !important;
+
+    @media (min-width: $screen-w--xl){
+        display: block !important;
+    }
+}
+//----------------------------------------

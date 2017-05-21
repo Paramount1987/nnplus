@@ -1,0 +1,168 @@
+header{
+    background-color: $color-green;
+    color: #fff;
+}
+
+.header-inner{
+    position: relative;
+    z-index: 10;
+    max-width: 770px;
+    margin: 0 auto;
+    padding: 17px 25px;
+}
+
+.header-top{
+    @include clearfix();
+}
+
+.header-logo{
+    width: 50px;
+    height: 35px;
+    background-color: #fff;
+    float: left;
+
+    img{
+        max-width: 100%;
+    }
+}
+
+.header-btn{
+    width: 24px;
+    height: 15px;
+    margin-top: 12px;
+    float: right;
+    transform: rotate(0deg);
+    cursor: pointer;
+
+    i{
+        display: block;
+        height: 1px;
+        background-color: #fff;
+        transform: rotate(0deg) translate(0,0);
+        transform-origin: left center;
+        transition: .25s ease-in-out;
+
+        &:first-child{
+            margin-bottom: 7px;
+        }
+    }
+
+    &.is-open{
+
+        i:first-child{
+            transform: rotate(45deg) translate(2px, -4px);
+        }
+
+        i:last-child{
+            transform: rotate(-45deg) translate(-3px, 8px);
+        }
+    }
+
+    @media (min-width: $screen-w--s) {
+        display: none;
+    }
+}
+
+//---------------header breadcrumbs
+.header-bottom{
+    padding-top: 35px;
+
+    @media (min-width: $screen-w--s) {
+        display: none;
+    }
+}
+
+.header-breadcrumbs{
+    margin: 0;
+    padding: 0 5px;
+    list-style: none;
+
+    li {
+        margin-bottom: 5px;
+    }
+
+    @media (min-width: $screen-w--s) {
+        padding-top: 20px;
+
+        li{
+            display: inline-block;
+            margin: 0 35px 10px 0;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+
+    @media (min-width: $screen-w--s) {
+        padding: 0;
+    }
+}
+
+.breadcrumbs-link{
+    font-family: "Futura New Demi";
+    font-size: 24px;
+    text-decoration: none;
+    color: rgba(255,255,255,.7);
+
+    &.active{
+        color: #fff;
+    }
+
+    &:hover{
+        color: #fff;
+    }
+}
+
+//----------------nav
+.nav{
+    position: absolute;
+    z-index: 100;
+    top: 87px;
+    left: 0;
+    display: none;
+    width: 100%;
+    padding: 0 20px;
+    background-color: $color-green;
+
+    @media (min-width: $screen-w--s) {
+        position: relative;
+        top: 0;
+        display: block !important;
+        padding: 25px 0 10px 0;
+    }
+}
+
+.header-nav{
+    margin: 30px 0 0 0;
+    padding: 10px 5px;
+    list-style: none;
+    border-top: 1px solid rgba(255,255,255,.15);
+
+    li{
+        margin-bottom: 3px;
+
+        &:last-child{
+            margin-top: 25px;
+        }
+    }
+
+    @media (min-width: $screen-w--s) {
+        display: none;
+    }
+}
+
+.nav-link{
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-out{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .7);
+    text-decoration: none;
+}

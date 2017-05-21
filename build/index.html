@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>NNPlus</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css">
+        <style type="text/css">
+            #preloader {
+                position: fixed;
+                z-index: 9999;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #009685;
+            }
+        </style>
+    </head>
+    <body class="bg-green">
+        <div id="preloader"></div>
+        <div id="wrapper">
+            <div class="body-container body-container--left">
+                <div class="container">
+                    <form class="nn-form">
+                        <h3 class="h3">Личный кабинет</h3>
+                        <div class="form-body">
+                            <div class="form-group">
+                                <label>Введие ваш телефон</label>
+                                <input class="form-control form-control-phone" placeholder="ваш телефон" type="tel">
+                            </div>
+                        </div>
+                        <button class="btn btn-default ajax-link" data-content="main2.html">Далее</button>
+                        <div class="form-footer align-center"><a class="link-default color-weak" href="#">Забыли пароль?</a></div>
+                    </form>
+                </div>
+            </div>
+            <div class="body-container body-container--right"></div>
+        </div>
+        <script src="js/vendor/jquery-3.1.0.min.js"></script>
+        <script src="js/vendor/jquery-maskinput.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

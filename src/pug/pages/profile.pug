@@ -1,0 +1,21 @@
+include ../components/header
+.body-container
+    .container.container--profile
+        .nn-profile
+            .profile-content
+                .profile-name Зайцев Михаил Сергеевич
+                .profile-info
+                    .profile-info__item
+                        .profile-info__title № ЭМК
+                        .profile-info__value 3398
+                    .profile-info__item
+                        .profile-info__title Телефон:
+                        .profile-info__value +7 987 222 78 69
+            ul.list-default.list-profile
+                li
+                    a(href="#").profile-link.ajax-link(data-content="profile2.html") Изменить данные
+                li
+                    a(href="#").profile-link.ajax-link(data-content="profile3.html") Сменить пароль
+                li
+                    a(href="#").profile-link.ajax-link(data-content="profile5.html") Закрыть доступ к ЛК
+include ../components/footer

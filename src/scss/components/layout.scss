@@ -1,0 +1,73 @@
+#wrapper{
+    position: relative;
+    z-index: 1;
+    min-height: 100%;
+    padding-bottom: 90px;
+}
+
+.container{
+    max-width: 770px;
+    margin: 0 auto;
+    padding: 40px 30px 10px 30px;
+
+    @media (min-width: $screen-w--sx) {
+
+    }
+
+    @media (min-width: $screen-w--xl) {
+
+    }
+}
+
+.container--personal{
+    padding: 60px 15px 10px 15px;
+}
+
+.container--profile{
+    padding: 60px 25px 10px 25px;
+}
+
+.container--analysis{
+    padding: 0;
+}
+
+
+.body-container--left{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    .container{
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        max-width: 350px;
+        transform: translate(-50%, -50%);
+    }
+
+    @media (min-width: $screen-w--sx) {
+        width: 50%;
+    }
+}
+
+.body-container--right{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+
+    background: url('../img/bg.jpg') top left no-repeat;
+    background-size: cover;
+
+    @media (min-width: $screen-w--sx) {
+        display: block;
+    }
+}

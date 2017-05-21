@@ -1,0 +1,30 @@
+﻿doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='x-ua-compatible', content='ie=edge')
+        title NNPlus
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        link(rel='stylesheet', href='css/index.css')
+        style(type="text/css").
+            #preloader {
+                position: fixed;
+                z-index: 9999;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #009685;
+            }
+    body.bg-green
+        #preloader
+        #wrapper
+            .body-container.body-container--left
+                .container
+                    include components/form
+            .body-container.body-container--right
+        script(src='js/vendor/jquery-3.1.0.min.js')
+        script(src='js/vendor/jquery-maskinput.js')
+        script(src='js/index.js')
