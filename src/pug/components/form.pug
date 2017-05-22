@@ -3,7 +3,11 @@ form.nn-form
     .form-body
         .form-group
             label Введие ваш телефон
-            input.form-control.form-control-phone(placeholder="ваш телефон" type="tel")
+            .form-control__wrap-phone
+                .phone-input__code
+                    | +7
+                    input(type="hidden" name="code" value="+7")
+                input.form-control.form-control-phone(placeholder="ваш телефон" type="tel" value="+7")
     button.btn.btn-default.ajax-link(data-content="main2.html") Далее
     .form-footer.align-center
         a(href="#").link-default.color-weak Забыли пароль?

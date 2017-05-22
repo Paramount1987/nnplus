@@ -1,8 +1,7 @@
 
 <header>
     <div class="header-inner">
-        <div class="header-top">
-            <div class="header-logo"><img src="img/svg/nnlogo.svg"/></div>
+        <div class="header-top"><a class="header-logo" href="#"><img class="visible-sx" src="img/svg/nn.svg"/><img class="visible-sm" src="img/svg/nnlogo.svg"/></a>
             <div class="header-btn"><i></i><i></i></div><a class="link-out visible-sm" href="#">Выход</a>
         </div>
         <nav class="nav">
@@ -33,7 +32,12 @@
                     </div>
                     <div class="form-group">
                         <label class="label-sm">Телефон:</label>
-                        <input class="form-control form-control-phone" placeholder="" type="tel" value="+7 987 222 78 69"/>
+                        <div class="form-control__wrap-phone">
+                            <div class="phone-input__code">+7
+                                <input type="hidden" name="code" value="+7"/>
+                            </div>
+                            <input class="form-control form-control-phone" placeholder="" type="tel" value="987 222 78 69"/>
+                        </div>
                     </div>
                     <div class="btn-group btn-group--flexbox"><a class="btn btn-green btn-sm" href="#">Отмена</a><a class="btn btn-invert btn-sm" href="#">Сохранить</a></div>
                 </div>

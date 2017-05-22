@@ -18,11 +18,15 @@ header{
 .header-logo{
     width: 50px;
     height: 35px;
-    background-color: #fff;
     float: left;
 
     img{
         max-width: 100%;
+    }
+
+    @media (min-width: $screen-w--s) {
+        width: 315px;
+        height: 55px;
     }
 }
 
@@ -104,6 +108,7 @@ header{
     font-size: 24px;
     text-decoration: none;
     color: rgba(255,255,255,.7);
+    transition: color .2s linear;
 
     &.active{
         color: #fff;
@@ -129,7 +134,7 @@ header{
         position: relative;
         top: 0;
         display: block !important;
-        padding: 25px 0 10px 0;
+        padding: 35px 0 10px 0;
     }
 }
 
@@ -154,15 +159,31 @@ header{
 
 .nav-link{
     font-size: 14px;
-    color: #fff;
+    color: rgba(255, 255, 255, .7);
     text-decoration: none;
 }
 
 .link-out{
     display: block;
-    margin-top: 10px;
+    margin-top: 15px;
     float: right;
     font-size: 14px;
     color: rgba(255, 255, 255, .7);
     text-decoration: none;
+    transition: color .2s linear;
+
+    &:hover{
+        color: #fff;
+    }
+}
+
+.nn-logo-link{
+    display: block;
+    width: 80px;
+    height: 60px;
+    margin-bottom: 55px;
+}
+
+.nn-logo{
+    width: 100%;
 }

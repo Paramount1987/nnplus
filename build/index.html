@@ -23,13 +23,18 @@
         <div id="preloader"></div>
         <div id="wrapper">
             <div class="body-container body-container--left">
-                <div class="container">
+                <div class="container"><a class="nn-logo-link" href="#"><img class="nn-logo" src="img/svg/nn.svg"></a>
                     <form class="nn-form">
                         <h3 class="h3">Личный кабинет</h3>
                         <div class="form-body">
                             <div class="form-group">
                                 <label>Введие ваш телефон</label>
-                                <input class="form-control form-control-phone" placeholder="ваш телефон" type="tel">
+                                <div class="form-control__wrap-phone">
+                                    <div class="phone-input__code">+7
+                                        <input type="hidden" name="code" value="+7">
+                                    </div>
+                                    <input class="form-control form-control-phone" placeholder="ваш телефон" type="tel" value="+7">
+                                </div>
                             </div>
                         </div>
                         <button class="btn btn-default ajax-link" data-content="main2.html">Далее</button>

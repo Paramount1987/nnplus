@@ -37,6 +37,11 @@
     }
 }
 
+.form-control__wrap-phone{
+    position: relative;
+    z-index: 1;
+}
+
 .form-control {
     display: block;
     width: 100%;
@@ -90,4 +95,18 @@
     height: 32px;
     margin-bottom: 15px;
     background: url('../img/svg/p.svg') no-repeat;
+}
+
+.phone-input__code{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 11px;
+    width: 30px;
+    font-size: 18px;
+    line-height: 40px;
+    color: #000;
+}
+.form-control-phone{
+    padding-left: 45px;
 }

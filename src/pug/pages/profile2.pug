@@ -9,7 +9,11 @@ include ../components/header
                         input.form-control(placeholder="" value="Зайцев Михаил Сергеевич")
                     .form-group
                         label.label-sm Телефон:
-                        input.form-control.form-control-phone(placeholder="" type="tel" value="+7 987 222 78 69")
+                        .form-control__wrap-phone
+                            .phone-input__code
+                                | +7
+                                input(type="hidden" name="code" value="+7")
+                            input.form-control.form-control-phone(placeholder="" type="tel" value="987 222 78 69")
                     .btn-group.btn-group--flexbox
                         a(href="#").btn.btn-green.btn-sm Отмена
                         a(href="#").btn.btn-invert.btn-sm Сохранить

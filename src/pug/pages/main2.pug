@@ -1,11 +1,17 @@
 .body-container.body-container--left
     .container
+        a(href="#").nn-logo-link
+            img(src="img/svg/nn.svg").nn-logo
         form.nn-form
             h3.h3 Вход в личный кабинет
             .form-body
                 .form-group
                     label Введие ваш телефон
-                    input.form-control.form-control-phone(placeholder="ваш телефон" type="tel")
+                    .form-control__wrap-phone
+                        .phone-input__code
+                            | +7
+                            input(type="hidden" name="code" value="+7")
+                        input.form-control.form-control-phone(placeholder="ваш телефон" type="tel")
                 .form-group
                     input.form-control(placeholder="Пароль" type="password")
                     .input-error Текст ошибки

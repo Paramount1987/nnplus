@@ -1,12 +1,17 @@
 
 <div class="body-container body-container--left">
-    <div class="container">
+    <div class="container"><a class="nn-logo-link" href="#"><img class="nn-logo" src="img/svg/nn.svg"/></a>
         <form class="nn-form">
             <h3 class="h3">Вход в личный кабинет</h3>
             <div class="form-body">
                 <div class="form-group">
                     <label>Введие ваш телефон</label>
-                    <input class="form-control form-control-phone" placeholder="ваш телефон" type="tel"/>
+                    <div class="form-control__wrap-phone">
+                        <div class="phone-input__code">+7
+                            <input type="hidden" name="code" value="+7"/>
+                        </div>
+                        <input class="form-control form-control-phone" placeholder="ваш телефон" type="tel"/>
+                    </div>
                 </div>
                 <div class="form-group">
                     <input class="form-control" placeholder="Пароль" type="password"/>

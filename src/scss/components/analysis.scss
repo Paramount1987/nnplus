@@ -29,9 +29,9 @@
 .nn-analysis__control{
     position: absolute;
     z-index: 10;
-    top: 5px;
-    right: 5px;
-    width: 5px;
+    top: 8px;
+    right: 0;
+    width: 10px;
     height: 20px;
     cursor: pointer;
 
@@ -39,7 +39,7 @@
         display: block;
         width: 4px;
         height: 4px;
-        margin-bottom: 2px;
+        margin-bottom: 3px;
         border-radius: 4px;
         background-color:  #95989a;
     }
@@ -68,7 +68,7 @@
     right: 20px;
     display: none;
     width: 145px;
-    padding: 3px 7px;
+    padding: 6px 6px 6px 30px;
     background-color: #f5f8fa;
     border-radius: 2px;
     font-size: 12px;
@@ -79,8 +79,23 @@
     &.is-active{
         display: block;
     }
+
+    .icon-garbage{
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        left: 6px;
+        margin-top: -9px;
+    }
 }
 
+.icon-garbage{
+    display: block;
+    width: 16px;
+    height: 17px;
+    background: url("../img/svg/garbage.svg") no-repeat;
+    background-size: cover;
+}
 //-----------page
 .analysis-page{
     @media (min-width: $screen-w--sx) {

@@ -11,6 +11,7 @@ const APP = {
             _this.onAjaxClick();
             _this.initMaskInput();
             _this.onAnalysisClick();
+            _this.onClickOutsideAnalysis();
         });
 
     },
@@ -37,13 +38,22 @@ const APP = {
     },
 
     initMaskInput: function(){
-        $(".form-control-phone").mask("+7 999 999 99 99");
+        $(".form-control-phone").mask("999 999 99 99");
     },
 
     onAnalysisClick: function(){
         $('body').on('click', '.nn-analysis__control', function(){
            $(this).parent().find('.nn-analysis__remove').toggleClass('is-active');
         });
+    },
+
+    onClickOutsideAnalysis: function(){
+        $(document).click(function(e) {
+            var target = e.target; //target div recorded
+            if (!$(target).is('.nn-analysis__remove') && !$(target).is('.nn-analysis__control') && !$(target).is('.nn-analysis__control-i')) {
+                $('.nn-analysis__remove').removeClass('is-active'); //if the click element is not the above id will hide
+            }
+        })
     }
 }
 
