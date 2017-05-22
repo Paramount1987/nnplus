@@ -1,6 +1,7 @@
 const APP = {
     ajaxLink: '.ajax-link',
     container: '#wrapper',
+    profileLink: '.profile-link',
 
     init: function() {
         const _this = this;
@@ -12,6 +13,7 @@ const APP = {
             _this.initMaskInput();
             _this.onAnalysisClick();
             _this.onClickOutsideAnalysis();
+            _this.onHoverProfileLink();
         });
 
     },
@@ -54,6 +56,20 @@ const APP = {
                 $('.nn-analysis__remove').removeClass('is-active'); //if the click element is not the above id will hide
             }
         })
+    },
+
+    onHoverProfileLink: function(){
+        const _this = this;
+
+        $('body').on('mouseenter', _this.profileLink, function(){
+            console.log(this);
+            $(_this.profileLink).addClass('is-unhover');
+            $(this).removeClass('is-unhover').addClass('is-hover');
+        });
+
+        $('body').on('mouseleave', _this.profileLink, function(){
+            $(_this.profileLink).removeClass('is-unhover is-hover');
+        });
     }
 }
 

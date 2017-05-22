@@ -45,13 +45,19 @@
     }
 }
 
+.nn-analysis__body{
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
 .analysis-date{
     font-size: 11px;
 }
 
 .analysis-name{
     margin: 0 0 20px 0;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: normal;
     color: $color-green;
 }

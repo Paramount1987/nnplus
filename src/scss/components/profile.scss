@@ -60,4 +60,13 @@
 .profile-link{
     color: $color-green;
     text-decoration: none;
+    transition: color .2s linear;
+
+    &.is-unhover{
+        color: rgba(0, 150, 133, .7)
+    }
+
+    &.is-hover{
+        color: $color-green;
+    }
 }
