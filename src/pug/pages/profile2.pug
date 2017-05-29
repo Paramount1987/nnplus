@@ -6,15 +6,15 @@ include ../components/header
                 .form-body
                     .form-group.form-group--bottom-lg
                         label.label-sm ФИО:
-                        input.form-control(placeholder="" value="Зайцев Михаил Сергеевич")
+                        input.form-control.js-input-v(placeholder="" value="Зайцев Михаил Сергеевич")
                     .form-group
                         label.label-sm Телефон:
                         .form-control__wrap-phone
                             .phone-input__code
                                 | +7
                                 input(type="hidden" name="code" value="+7")
-                            input.form-control.form-control-phone(placeholder="" type="tel" value="987 222 78 69")
+                            input.form-control.form-control-phone.js-input-v(placeholder="" type="tel" value="987 222 78 69")
                     .btn-group.btn-group--flexbox
                         a(href="#").btn.btn-green.btn-sm Отмена
-                        a(href="#").btn.btn-invert.btn-sm Сохранить
+                        a(href="#").btn.btn-invert.btn-sm.ajax-link Сохранить
 include ../components/footer

@@ -11,10 +11,9 @@
                         .phone-input__code
                             | +7
                             input(type="hidden" name="code" value="+7")
-                        input.form-control.form-control-phone(placeholder="ваш телефон" type="tel")
+                        input.form-control.form-control-phone.js-input-v(placeholder="ваш телефон" type="tel" data-validate="required")
                 .form-group
-                    input.form-control(placeholder="Пароль" type="password")
-                    .input-error Текст ошибки
+                    input.form-control.js-input-v(placeholder="Пароль" type="password")
             button.btn.btn-default.ajax-link(data-content="main3.html") Войти
             .form-footer.align-center
                 a(href="#").link-default.color-weak.ajax-link(data-content="forgotPassword.html" data-bg="true") Восстановление пароля

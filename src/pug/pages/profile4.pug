@@ -6,11 +6,11 @@ include ../components/header
                 .form-body
                     .form-group.form-group--bottom-x-lg
                         label.label-lg Смена пароля
-                        input.form-control(placeholder="Ваш пароль")
+                        input.form-control.js-input-v(placeholder="Ваш пароль")
                     .form-group.form-group--bottom
                         label.label-sm Новый пароль должен содержать латинские буквы и цифры, минимум 8 знаков.
-                        input.form-control(placeholder="Новый пароль" type="password")
+                        input.form-control.js-input-p(placeholder="Новый пароль" type="password")
                     .form-group
-                        input.form-control(placeholder="Повторите новый пароль" type="password")
+                        input.form-control.js-input-p(placeholder="Повторите новый пароль" type="password")
                 button.btn.btn-default.ajax-link(data-content="forgotPassword.html") Установить пароль
 include ../components/footer
